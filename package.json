@@ -1,0 +1,16 @@
+{
+  "name": "amazon-automation",
+  "version": "1.0.0",
+  "description": "Amazon automation tests using Playwright - TestMu AI Assignment",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:iphone": "npx playwright test tests/iphone.test.js --headed",
+    "test:galaxy": "npx playwright test tests/galaxy.test.js --headed",
+    "test:parallel": "npx playwright test --workers=2",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0"
+  }
+}
